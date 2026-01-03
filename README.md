@@ -1,9 +1,9 @@
 # Pizza_Sales_Dashboard
 
-**Interactive Power BI Dashboard**  
+**Interactive Power BI Dashboard powered by SQL**  
 Pizza sales analytics: Orders, revenue, busiest days, top categories
 
-**View Live Dashboard Screenshots:** 
+**View Dashboard Screenshots:** 
 - **Overview**: 
 ![Overview](https://github.com/carla58-58/Pizza_Sales_Dashboard_Data_Analysis/blob/main/image5.png)
 
@@ -49,12 +49,35 @@ Analyze pizza sales performance across dates, categories, and metrics (Jan 15-De
 - **California #2** consistent performer
 - **Worst sellers** easily identified for menu review
 
-## 4. Technologies
+## 4. SQL Data Pipeline
+Extracted all KPIs with production-ready queries:
+
+```sql
+-- Total Revenue (Dashboard KPI #1)
+SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales
+
+-- Friday Peak Detection (Busiest Day Chart)
+SELECT DATENAME(DW, order_date) AS order_day, 
+       COUNT(DISTINCT order_id) AS Total_orders
+FROM pizza_sales
+GROUP BY DATENAME(DW, order_date)
+
+-- Avg Order Value ($31.81 KPI)
+SELECT SUM(total_price)/COUNT(DISTINCT order_id) AS Avg_Order_Value 
+FROM pizza_sales
+
+Full SQL → link
+
+## 5. Technologies
 
 📊 Power BI (full dashboard)
+
+🗄️ SQL (ETL & KPIs)
 
 🔗 DAX (KPIs, rankings, % calculations)
 
 📈 Slicers & date intelligence
 
 📊 Category breakdowns & top-N visuals
+
+Complete SQL → Power BI pipeline! 💾➡️📊
