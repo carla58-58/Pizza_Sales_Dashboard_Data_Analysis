@@ -5,10 +5,10 @@ Pizza sales analytics: Orders, revenue, busiest days, top categories
 
 **View Live Dashboard Screenshots:** 
 - **Overview**: 
-![Overview](pizza-overview.png)
+![Overview](https://github.com/carla58-58/Pizza_Sales_Dashboard_Data_Analysis/blob/main/image5.jpg)
 
 - **Top Sellers**: 
-![Top Sellers](pizza-top-sellers.png)
+![Top Sellers](https://github.com/carla58-58/Pizza_Sales_Dashboard_Data_Analysis/blob/main/image6.jpg)
 
 ## 1. Project Overview
 
