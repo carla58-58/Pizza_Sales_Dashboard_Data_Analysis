@@ -54,6 +54,9 @@ text
 ## 4. Technologies
 
 📊 Power BI (full dashboard)
+
 🔗 DAX (KPIs, rankings, % calculations)
+
 📈 Slicers & date intelligence
+
 📊 Category breakdowns & top-N visuals
