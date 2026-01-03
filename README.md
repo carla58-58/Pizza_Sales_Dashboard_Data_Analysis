@@ -52,21 +52,20 @@ Analyze pizza sales performance across dates, categories, and metrics (Jan 15-De
 ## 4. SQL Data Pipeline
 Extracted all KPIs with production-ready queries:
 
-```sql
--- Total Revenue (Dashboard KPI #1)
-SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales
+-- Total Revenue
+SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
 
--- Friday Peak Detection (Busiest Day Chart)
+-- Friday Peak (Busiest Day)
 SELECT DATENAME(DW, order_date) AS order_day, 
        COUNT(DISTINCT order_id) AS Total_orders
 FROM pizza_sales
-GROUP BY DATENAME(DW, order_date)
+GROUP BY DATENAME(DW, order_date);
 
--- Avg Order Value ($31.81 KPI)
+-- Avg Order Value ($31.81)
 SELECT SUM(total_price)/COUNT(DISTINCT order_id) AS Avg_Order_Value 
-FROM pizza_sales
+FROM pizza_sales;
 
-**Full SQL queries:** [queries.sql]([SQL_queries/queries.sql](https://github.com/carla58-58/Pizza_Sales_Dashboard_Data_Analysis/blob/main/SQL_queries))
+Full SQL: queries.sql.
 
 ## 5. Technologies
 
@@ -80,4 +79,4 @@ FROM pizza_sales
 
 📊 Category breakdowns & top-N visuals
 
-Complete SQL → Power BI pipeline! 💾➡️📊
+Pipeline: SQL → Power BI! 💾➡️📊.
