@@ -34,8 +34,6 @@ Analyze pizza sales performance across dates, categories, and metrics (Jan 15-De
 ✅ Pizza category slicer
 ✅ Top/Bottom rankings
 
-text
-
 **Key Visualizations:**
 - **KPIs**: Orders (8176 peak), Avg daily (38.1%)
 - **Bar charts**: Busiest days (Fri>Sat), Top sellers (Supreme/California)
