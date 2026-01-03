@@ -66,7 +66,7 @@ GROUP BY DATENAME(DW, order_date)
 SELECT SUM(total_price)/COUNT(DISTINCT order_id) AS Avg_Order_Value 
 FROM pizza_sales
 
-Full SQL → [sql_queries](https://github.com/carla58-58/Pizza_Sales_Dashboard_Data_Analysis/blob/main/SQL_queries)
+Full SQL → ![Overview]([https://github.com/carla58-58/Pizza_Sales_Dashboard_Data_Analysis/blob/main/image5.png](https://github.com/carla58-58/Pizza_Sales_Dashboard_Data_Analysis/blob/main/SQL_queries))
 
 ## 5. Technologies
 
