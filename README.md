@@ -14,7 +14,7 @@ Pizza sales analytics: Orders, revenue, busiest days, top categories
 - **Complete ETL Pipeline**:
 Raw CSV (48K rows) → SQL Server Import → KPI Queries → Power Query Cleaning → DAX Measures → Interactive Dashboard
 
-## 1. Project Overview
+## 2. Project Overview
 
 **Objective:**  
 Analyze pizza sales performance across dates, categories, and metrics (Jan 15-Dec data).
@@ -32,12 +32,12 @@ Analyze pizza sales performance across dates, categories, and metrics (Jan 15-De
 - Orders by day/time
 - Top/worst performers
 
-## 2. Dashboard Features
+## 3. Dashboard Features
 
 **Interactive Filters:**
-✅ Date range (Jan15-Dec)
-✅ Pizza category slicer
-✅ Top/Bottom rankings
+- Date range (Jan15-Dec)
+- Pizza category slicer
+-  Top/Bottom rankings
 
 **Key Visualizations:**
 - **KPIs**: Orders (8176 peak), Avg daily (38.1%)
@@ -47,13 +47,13 @@ Analyze pizza sales performance across dates, categories, and metrics (Jan 15-De
 - **Tables**: Top 5/5 worst pizzas
 
 **Video Features Implemented:**
-✅ New Card Visuals (June 2023 Power BI)
-✅ Navigator buttons (Home ↔ Sellers)
-✅ Action filters (click-to-filter)
-✅ Power Query cleaning
-✅ SQL → Power BI validation
+- New Card Visuals (June 2023 Power BI)
+- Navigator buttons (Home ↔ Sellers)
+- Action filters (click-to-filter)
+- Power Query cleaning
+- SQL → Power BI validation
 
-## 3. Key Findings
+## 4. Key Findings
 
 - **Fridays peak** (8,176 orders—38% above average)
 - **Supreme dominates** (38% revenue share)
@@ -61,7 +61,7 @@ Analyze pizza sales performance across dates, categories, and metrics (Jan 15-De
 - **California #2** consistent performer
 - **Worst sellers** easily identified for menu review
 
-## 4. SQL Data Pipeline
+## 5. SQL Data Pipeline
 Extracted all KPIs with production-ready queries:
 
 -- 1. Total Revenue 
@@ -81,7 +81,7 @@ FROM pizza_sales;
 - **Full SQL**: ![SQL](https://github.com/carla58-58/Pizza_Sales_Dashboard_Data_Analysis/blob/main/SQL_queries)
 
 
-## 5. Technologies
+## 6. Technologies
 
 📊 Power BI (full dashboard)
 
@@ -95,7 +95,7 @@ FROM pizza_sales;
 
 Pipeline: SQL → Power BI! 💾➡️📊.
 
-## 6. End-to-End Workflow
+## 7. End-to-End Workflow
 
 **Step 1: Raw Data**  
 `pizza_sales.csv` (48,620 pizza orders, Jan-Dec 2015)
